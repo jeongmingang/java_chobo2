@@ -3,11 +3,11 @@ package java_chobo2.ch15;
 import java.io.File;
 
 public class Ex15_17 {
-
 	static int deletedFiles = 0;
+	
 	public static void main(String[] args) {
 		if(args.length != 1) {
-			System.out.println("USAGE : java Employee Extension");
+			System.out.println("USAGE : java Ex15_test Extension");
 			System.exit(0);
 		}
 		
@@ -23,7 +23,7 @@ public class Ex15_17 {
 	public static void delete(File dir, String ext) {
 		File[] files = dir.listFiles();
 		
-		for(int i = 0; i<files.length; i++)
+		for(int i=0; i < files.length; i++)
 			if(files[i].isDirectory()) {
 				delete(files[i], ext);
 			} else {
@@ -38,7 +38,7 @@ public class Ex15_17 {
 						System.out.println(" - 삭제 실패");
 				}
 			} // if(files[i].isDirectory()) {
-		} // end of delete
+	} // end of delete
 }
 
 
