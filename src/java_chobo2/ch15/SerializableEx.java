@@ -24,8 +24,8 @@ public class SerializableEx {
 			list.add(u2);
 			
 			// 객체를 직렬화한다.
-			oos.writeObject(u1);
-			oos.writeObject(u2);
+//			oos.writeObject(u1);
+//			oos.writeObject(u2);
 			oos.writeObject(list);
 			
 			System.out.println("직렬화가 잘 끝났습니다.");

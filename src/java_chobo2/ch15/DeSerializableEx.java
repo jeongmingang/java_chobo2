@@ -24,12 +24,12 @@ public class DeSerializableEx {
 				ObjectInputStream ois = new ObjectInputStream(bis)) {
 
 			// 객체를 읽을때는 출력한 순서와 일치해야함
-			UserInfo u1 = (UserInfo) ois.readObject();
-			UserInfo u2 = (UserInfo) ois.readObject();
+//			UserInfo u1 = (UserInfo) ois.readObject();
+//			UserInfo u2 = (UserInfo) ois.readObject();
 			ArrayList<UserInfo> list = (ArrayList) ois.readObject();
 			
-			System.out.println(u1);
-			System.out.println(u2);
+			System.out.println(list.get(0));
+			System.out.println(list.get(1));
 			System.out.println(list);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
