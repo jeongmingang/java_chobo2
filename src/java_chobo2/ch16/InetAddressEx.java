@@ -18,7 +18,7 @@ public class InetAddressEx {
 
 			byte[] ipAddr = ip.getAddress();
 			System.out.println("getAddress() :" + Arrays.toString(ipAddr));
-
+			
 			String result = "";
 			for (int i = 0; i < ipAddr.length; i++)
 				result += (ipAddr[i] < 0 ? ipAddr[i] + 256 : ipAddr[i]) + ".";
