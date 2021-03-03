@@ -5,7 +5,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-public class FuntionEx {
+public class FunctionEx {
 
 	public static void main(String[] args) {
 		Supplier<Integer> f = () -> (int)(Math.random()*100)+1;

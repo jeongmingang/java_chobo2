@@ -2,7 +2,7 @@ package java_chobo2.ch14;
 
 import java.util.function.Predicate;
 
-public class FuntionPredicateEx {
+public class FunctionPredicateEx {
 
 	public static void main(String[] args) {
 		String[] strArr = {"", "ab", "", "abc", "def", ""};
