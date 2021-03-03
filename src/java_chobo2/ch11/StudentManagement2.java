@@ -8,35 +8,35 @@ public class StudentManagement2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
-		HashMap<Integer, Student> students = new HashMap<Student>();
-		initial(students);
-		
-		System.out.println("학생관리 프로그램");
-		int choice;
-		do {
-			showMenu();
-			System.out.print("메뉴 > ");
-			choice = sc.nextInt();
-			switch (choice) {
-			case 1:
-				System.out.println("학생 추가");
-				addStudent(students, sc);
-				break;
-			case 2:
-				System.out.println("학생 수정");
-				modifyStudent(students, sc);
-				break;
-			case 3:
-				System.out.println("학생 삭제");
-				deleteStudent(students, sc);
-				break;
-			case 4:
-				System.out.println("학생 목록");
-				prnStudent(students);
-				break;
-			}
-		} while (choice < 5);
+//
+//		HashMap<Integer, Student> students = new HashMap<Student>();
+//		initial(students);
+//		
+//		System.out.println("학생관리 프로그램");
+//		int choice;
+//		do {
+//			showMenu();
+//			System.out.print("메뉴 > ");
+//			choice = sc.nextInt();
+//			switch (choice) {
+//			case 1:
+//				System.out.println("학생 추가");
+//				addStudent(students, sc);
+//				break;
+//			case 2:
+//				System.out.println("학생 수정");
+//				modifyStudent(students, sc);
+//				break;
+//			case 3:
+//				System.out.println("학생 삭제");
+//				deleteStudent(students, sc);
+//				break;
+//			case 4:
+//				System.out.println("학생 목록");
+//				prnStudent(students);
+//				break;
+//			}
+//		} while (choice < 5);
 		sc.close();
 	}
 
