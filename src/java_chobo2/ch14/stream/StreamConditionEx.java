@@ -46,12 +46,7 @@ public class StreamConditionEx {
 		System.out.printf("hasRes => %s%n", hasRes);
 		
 		stdStream = list.stream();					// 스트림 소모로 다시 생성
-		hasRes = stdStream.allMatch(new Predicate<Student>() {	// 나중에 확인
-			@Override
-			public boolean test(Student t) {
-				return t.getTotalscore() <= 80;
-			}
-	});
-		System.out.printf("getTotalScore => %s%n", hasRes);
+		hasRes = stdStream.allMatch(s->s.getTotalscore() <= 80);
+		System.out.printf("getTotalScore => 80 : %s%n", hasRes);
 }
 }
