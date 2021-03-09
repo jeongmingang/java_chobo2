@@ -25,7 +25,7 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public String toString() {
-		return String.format("Student [name=%s, ban=%s, totalscore=%s]", name, ban, totalscore);
+		return String.format("[%s, %s, %s]", name, ban, totalscore);
 	}
 
 	@Override
